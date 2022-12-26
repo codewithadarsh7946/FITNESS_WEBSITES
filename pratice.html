@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            font-family: 'Chivo Mono', monospace;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 20px;
+            left: 35px;
+        }
+
+        .mid {
+            display: block;
+            width: 46%;
+            margin: 20px auto;
+            position: relative;
+            top: 15px;
+            border-radius: 15px;
+            /* border: 2px solid green; */
+
+        }
+       
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid green; */
+            position: absolute;
+            top: 20px;
+            right: 35px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 23px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 22px 39px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(98, 88, 88);
+
+            border-radius: 25px ;
+
+        }
+
+        .left img {
+            width: 116px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            /* text-align: center; */
+            text-align: center;
+            line-height: 5px;
+            font-size: 16px;
+        }
+
+        .btn {
+            font-family: 'Chivo Mono', monospace;
+    margin: 29px 4px;
+    padding: 7px 3px;
+    border-radius: 12px;
+    cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(234, 145, 145);
+            color: black;
+        }
+
+        .container {
+            border: 2px solid #e3e0e0;
+            display: block;
+            width: 37%;
+            padding: 120px 10px;
+            margin: 85px 69px;
+            border-radius: 58px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            border: 2px solid rgb(52, 49, 49);
+            width: 71%;
+            margin: auto;
+            padding: 8px 12px;
+            font-size: 20px;
+            border-radius: 27px;
+        }
+
+        .btn1 {
+            text-align: center;
+            display: block;
+            width: 32%;
+            /* margin: 6px 96px; */
+            background-color: rgb(11, 11, 11);
+            color: rgb(216, 213, 213);
+            margin: 19px auto;
+            font-size: 20px;
+            padding: 15px auto;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Chivo Mono', monospace;
+        }
+        .btn1:hover{
+            color: black;
+            background-color: rgb(222, 206, 206);
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: 'Chivo Mono', monospace;
+        }
+        .navbar li a:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/dum.png" alt="">
+            <div>Adarsh fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="contact.html">Contactus</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Zym  of the Bihar Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your city">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Wegiht">
+            </div>
+            <button class="btn1">submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
